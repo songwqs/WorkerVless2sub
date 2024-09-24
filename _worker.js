@@ -5,9 +5,12 @@ let mytoken= ['auto'];//快速订阅访问入口, 留空则不启动快速订阅
 
 // 设置优选地址，不带端口号默认443，TLS订阅生成
 let addresses = [
-    'icook.tw:2053#官方优选域名',
-    'cloudflare.cfgo.cc#优选官方线路',
-    'cloudflare.182682.xyz#优选官方线路2',
+    	'icook.tw:2053#官方优选域名',
+    	'www.visa.com.hk#优选官方线路1',
+        'ip.sb#优选官方线路2',
+	'cloudflare.182682.xyz#优选官方线路3',
+	'cloudfront.182682.xyz#优选官方线路4',
+	'gcore.182682.xyz#优选官方线路5',
 ];
 
 // 设置优选地址api接口
@@ -35,7 +38,7 @@ let addressesnotlsapi = [
 	'https://ipdb.api.030101.xyz/?type=bestproxy&country=true',
 	'https://ipdb.api.030101.xyz/?type=bestcf&country=true',
 	'https://addressesapi.090227.xyz/ct',
-	'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
+	//'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
 ];
 
 let DLS = 8;//速度下限
@@ -43,7 +46,7 @@ let addressescsv = [
 	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv', //iptest测速结果文件。
 ];
 
-let subconverter = "SUBAPI.fxxk.dedyn.io"; //在线订阅转换后端，目前使用CM的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
+let subconverter = "psub.w1e.top"; //在线订阅转换后端，目前使用CM的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
 let subconfig = "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"; //订阅转换配置文件
 let noTLS = 'false'; //改为 true , 将不做域名判断 始终返回noTLS节点
 let link = '';
@@ -60,7 +63,7 @@ let socks5DataURL = '';//'https://raw.githubusercontent.com/cmliu/WorkerVless2su
 let BotToken ='';
 let ChatID =''; 
 let proxyhosts = [//本地代理域名池
-	//'ppfv2tl9veojd-maillazy.pages.dev',
+	//'41',
 ];
 let proxyhostsURL = 'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/proxyhosts';//在线代理域名池URL
 let EndPS = '';//节点名备注内容
